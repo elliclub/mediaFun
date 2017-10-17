@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Responsivitet</title>
+</head>
+<body>
+<!--
+1. Skapa en webbsida med ett div-element som har tre div som children. 
+Den kan läggas upp på GitHub. Använd flex för att lägga ut dem på rad. 
+Skriv en media query som ändrar så att elementen läggs ut vertikalt 
+om webbläsaren är mellan 600 och 1050 pixlar bred.
+2. Lägg till ett div-element på samma sida, som är 200 pixlar högt 
+och fyller hela sidans bredd. Om webbläsaren är upp till 600 
+pixlar bred ska det ha vit bakgrundsfärg. Efter det ska bakgrunden 
+byta färg varje gång storleken ökar med 150. Alltså 601-750, 751-900 
+och större än 900 pixlar.
+3. Lägg till ett div-element på samma sida, som ska visa namnet (eller värdet) 
+på den färg som visas i 1.2. (Tips: skapa fler div, använd display: none) -->
+ <div class=testMedia>
+     <header class="header"> The responsive header </header>
+     <div class="aside1">Some kind of text Some kind of text Some kind of text 
+         Some kind of text Some kind of text Some kind of text
+     </div>
+     <div class="main">Some other kind of text Some other kind of text Some other 
+         kind of text Some other kind of textSome other kind of textSome other kind of text
+     </div>
+     <div class="aside2">Something completely else Something completely else 
+         Something completely else Something completely else Something completely else Something completely else
+     </div>
+     <footer class="footer"> The responsive footer </footer>
+     <div class="twopxl"> Another test of media@</div>
+     <div class="showColor">
+         <div class="white">White White White</div>
+         <div class="grey">Lightslategrey</div>
+         <div class="purple">Rebeccapurple</div>
+         <div class="blue">Darkslateblue</div>
+     </div>
+ </div>
+
+</body>
