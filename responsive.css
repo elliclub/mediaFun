@@ -1,0 +1,109 @@
+
+body {
+    padding: 2em;
+}
+
+.testMedia{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.testMedia > *{
+    padding: 10px;
+    flex: 1 100%;
+}
+.header{
+    background-color: mediumpurple;
+}
+
+.aside1{
+    background-color: lightpink;
+    flex:1 0px;
+    order: 1;
+   
+}
+.aside2{
+    background-color: plum;
+    flex:1 0px;
+    order: 3;
+   
+}
+.main{
+    background-color: palevioletred;
+    flex: 3 0px;
+    order: 2;
+    
+}
+.footer{
+    background-color: rebeccapurple;
+    order: 4;
+}
+.twopxl{
+    height: 200px;
+}
+.showColor{
+    background-color: lightblue;  
+}
+.white{
+    display: none;
+    align-items: center;
+}
+.purple{
+    display: none;
+}
+.grey{
+    display: none;
+}
+.blue{
+    display: none;
+}
+
+@media screen and (min-width:300px) and (max-width: 800px){
+
+    body {
+    padding: 0;
+}
+.testMedia > *{
+    padding: 30px;
+    flex: 1 100%;
+}
+}
+@media screen and (max-width:600px){
+    .twopxl{
+        background-color: white;
+    }
+    .white{
+        display: flex;
+        color: white;
+        
+    }
+}
+@media screen and (min-width: 601px) and (max-width:750px){
+    .twopxl{
+        background-color: lightslategrey;
+    }
+    .grey{
+        display: flex;
+        color: lightslategrey;
+    }
+    
+}
+@media screen and (min-width: 751px) and (max-width: 900px){
+    .twopxl{
+        background-color: rebeccapurple;
+    }
+    .purple{
+        display: flex;
+        color:rebeccapurple;
+    }
+}
+@media screen and (min-width: 900px){
+    .twopxl{
+        background-color: darkslateblue;
+    }
+    .blue{
+        display: flex;
+        color: darkslateblue;
+    }
+}
